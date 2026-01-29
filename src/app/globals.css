@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #013220; /* whole page background */
+  color: red; /* all text red */
+}
+
+.container {
+  display: flex;
+  justify-content: center; /* center row horizontally */
+  align-items: center;     /* center vertically */
+  min-height: 100vh;
+  gap: 50px;               /* spacing between containers */
+  background-color: #013220; /* main container background same as page */
+  border-color: #013220;
+}
+
+.teamContainer, .timerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  background-color: #013220; /* containers background same */
+  border: none; /* remove any borders */
+  padding: 0;   /* remove extra padding if any */
+}
+
+input {
+  width: 60px;
+  text-align: center;
+  color: red; /* input text red */
+  background-color: #013220;
+  border: 1px solid red;
+}
+
+button {
+  color: red;
+  background-color: #013220;
+  border: 1px solid red;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+h2, p, label {
+  color: red;
+}
