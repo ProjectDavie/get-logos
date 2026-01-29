@@ -22,7 +22,7 @@ export default function HomePage() {
   const [minutes, setMinutes] = useState(0);
   const [seconds, setSeconds] = useState(0);
   const [editingTimer, setEditingTimer] = useState(true);
-  const timerRef = useRef<NodeJS.Timer | null>(null);
+  const timerRef = useRef<NodeJS.Timeout | null>(null);
 
   const fetchTeam = async (teamName: string, side: "left" | "right") => {
     if (!teamName) return;
